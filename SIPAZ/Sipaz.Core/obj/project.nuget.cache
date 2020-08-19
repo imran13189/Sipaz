@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "jHKNZvL7kusNXQLSBm8xEv5R5yKVFu0SijFiSDrZn508eTM/gI2rEwdHans7v+2o/wZWaYUGS5rbjfthBhR/dw==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\SIPAZ\\Sipaz.Core\\Sipaz.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Imran\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.5\\microsoft.extensions.configuration.abstractions.3.1.5.nupkg.sha512",
+    "C:\\Users\\Imran\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512"
+  ],
+  "logs": []
+}

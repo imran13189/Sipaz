@@ -1,0 +1,9 @@
+C:\Project\SIPAZ\Sipaz.Core\bin\Debug\netcoreapp3.1\Sipaz.Core.deps.json
+C:\Project\SIPAZ\Sipaz.Core\bin\Debug\netcoreapp3.1\Sipaz.Core.dll
+C:\Project\SIPAZ\Sipaz.Core\bin\Debug\netcoreapp3.1\Sipaz.Core.pdb
+C:\Project\SIPAZ\Sipaz.Core\obj\Debug\netcoreapp3.1\Sipaz.Core.AssemblyInfoInputs.cache
+C:\Project\SIPAZ\Sipaz.Core\obj\Debug\netcoreapp3.1\Sipaz.Core.AssemblyInfo.cs
+C:\Project\SIPAZ\Sipaz.Core\obj\Debug\netcoreapp3.1\Sipaz.Core.dll
+C:\Project\SIPAZ\Sipaz.Core\obj\Debug\netcoreapp3.1\Sipaz.Core.pdb
+C:\Project\SIPAZ\Sipaz.Core\obj\Debug\netcoreapp3.1\Sipaz.Core.csproj.CoreCompileInputs.cache
+C:\Project\SIPAZ\Sipaz.Core\obj\Debug\netcoreapp3.1\Sipaz.Core.csprojAssemblyReference.cache

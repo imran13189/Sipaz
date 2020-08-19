@@ -1,0 +1,168 @@
+﻿@model Sipaz.Core.PropertyEntities.BasicDetails
+
+
+<form asp-action="_BasicDetails">
+    <div class="row">
+     
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+           
+                    <input asp-for="PropertyId" type="hidden" class="form-control" />
+                  
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="Locality" class="bmd-label-floating"></label>
+                    <input asp-for="Locality" class="form-control" />
+                    <span asp-validation-for="Locality" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="PropertyTypeId" class="bmd-label-floating"></label>
+                    <select asp-for="PropertyTypeId"
+                            class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.PropertyType,"PropertyTypeId", "PropertyType"))">
+                    </select>
+                    <span asp-validation-for="PropertyTypeId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="Area" class="bmd-label-floating"></label>
+                    <input asp-for="Area" class="form-control" />
+                    <span asp-validation-for="Area" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="AU" class="bmd-label-floating"></label>
+                    <select asp-for="AU"
+                            class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.PropertyType,"AU_ID", "AU"))">
+                    </select>
+                    <span asp-validation-for="AU" class="text-danger"></span>
+                </div>
+            </div>
+          
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="AvailableDate" class="bmd-label-floating"></label>
+                    <input asp-for="AvailableDate" class="form-control" />
+                    <span asp-validation-for="AvailableDate" class="text-danger"></span>
+                </div>
+            </div>
+ 
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="BathroomNum" class="bmd-label-floating"></label>
+                    <input asp-for="BathroomNum" class="form-control" />
+                    <span asp-validation-for="BathroomNum" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="TotalFloor" class="bmd-label-floating"></label>
+                    <input asp-for="TotalFloor" class="form-control" />
+                    <span asp-validation-for="TotalFloor" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="FloorNum" class="bmd-label-floating"></label>
+                    <input asp-for="FloorNum" class="form-control" />
+                    <span asp-validation-for="FloorNum" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="FurnishedType" class="bmd-label-floating"></label>
+                    <input asp-for="FurnishedType" class="form-control" />
+                    <span asp-validation-for="FurnishedType" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="Address" class="bmd-label-floating"></label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="ProjectSociety" class="bmd-label-floating"></label>
+                    <input asp-for="ProjectSociety" class="form-control" />
+                    <span asp-validation-for="ProjectSociety" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group form-check">
+                    <label class="form-check-label">
+                        <input class="form-check-input" asp-for="CarParking" /> @Html.DisplayNameFor(model => model.CarParking)
+                    </label>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="FacingId" class="bmd-label-floating"></label>
+                    <select asp-for="FacingId"
+                            class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.PropertyType,"FaceId", "Face"))">
+                    </select>
+                    <span asp-validation-for="FacingId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="CityId" class="bmd-label-floating"></label>
+                    <select asp-for="CityId"
+                            class="form-control"
+                            asp-items="@(new SelectList(@ViewBag.Cities,"Id", "Name"))">
+                    </select>
+                    <span asp-validation-for="CityId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="Description" class="bmd-label-floating"></label>
+                    <input asp-for="Description" class="form-control" />
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="Mobile" class="bmd-label-floating"></label>
+                    <input asp-for="Mobile" class="form-control" />
+                    <span asp-validation-for="Mobile" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="PropertyName" class="bmd-label-floating"></label>
+                    <input asp-for="PropertyName" class="form-control" />
+                    <span asp-validation-for="PropertyName" class="text-danger"></span>
+                </div>
+            </div>
+        
+           
+            <div class="col-md-5">
+                <div class="form-group">
+                    <label asp-for="BedRooms" class="bmd-label-floating"></label>
+                    <input asp-for="BedRooms" class="form-control" />
+                    <span asp-validation-for="BedRooms" class="text-danger"></span>
+                </div>
+            </div>
+          
+            <div class="col-md-5">
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </div>
+
+        </div>
+    
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
