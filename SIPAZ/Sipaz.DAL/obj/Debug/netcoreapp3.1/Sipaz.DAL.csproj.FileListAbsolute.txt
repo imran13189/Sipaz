@@ -10,3 +10,15 @@ C:\Project\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.csproj.CopyComplete
 C:\Project\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.dll
 C:\Project\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.pdb
 C:\Project\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\SIPAZ\Sipaz.DAL\bin\Debug\netcoreapp3.1\Sipaz.DAL.deps.json
+C:\Projects\SIPAZ\Sipaz.DAL\bin\Debug\netcoreapp3.1\Sipaz.DAL.dll
+C:\Projects\SIPAZ\Sipaz.DAL\bin\Debug\netcoreapp3.1\Sipaz.DAL.pdb
+C:\Projects\SIPAZ\Sipaz.DAL\bin\Debug\netcoreapp3.1\Sipaz.Core.dll
+C:\Projects\SIPAZ\Sipaz.DAL\bin\Debug\netcoreapp3.1\Sipaz.Core.pdb
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.csprojAssemblyReference.cache
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.AssemblyInfoInputs.cache
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.AssemblyInfo.cs
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.csproj.CoreCompileInputs.cache
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.csproj.CopyComplete
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.dll
+C:\Projects\SIPAZ\Sipaz.DAL\obj\Debug\netcoreapp3.1\Sipaz.DAL.pdb

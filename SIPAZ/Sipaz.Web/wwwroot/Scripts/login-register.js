@@ -92,6 +92,8 @@ $(document).ready(function () {
             url: $LoginUrl,
             data: $(this).serialize(),
             success: function (data) {
+                debugger;
+                window.localStorage.setItem("token", data);
                 location.reload();
             }
         });

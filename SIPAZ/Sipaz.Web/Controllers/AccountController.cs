@@ -42,7 +42,8 @@ namespace Sipaz.Web.Controllers
 
                 var userPrincipal = new ClaimsPrincipal(new[] { grandmaIdentity });
                 HttpContext.SignInAsync(userPrincipal);
-                return Json(true);
+                string response = _user.generateJwtToken(model);
+                return Json(response);
             }
             else
             {

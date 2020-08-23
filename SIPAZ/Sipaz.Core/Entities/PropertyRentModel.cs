@@ -36,5 +36,9 @@ namespace Sipaz.Core.Entities
         public long UserId { get; set; }
         public int BedRooms { get; set; }
         public int StateID { get; set; }
+
+        public IEnumerable<PropertyTypeModel> propertyType { get; set; }
+        public IEnumerable<AUModel> AuList { get; set; }
+        public IEnumerable<CityModel> Cities { get; set; }
     }
 }

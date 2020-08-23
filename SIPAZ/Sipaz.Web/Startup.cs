@@ -65,6 +65,7 @@ namespace Sipaz.Web
             services.AddRazorPages().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
             services.AddSession();
+            services.AddControllers().AddNewtonsoftJson();
 
         }
 

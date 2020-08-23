@@ -1,14 +1,17 @@
-﻿@model Sipaz.Core.PropertyEntities.BasicDetails
+﻿@model Sipaz.Core.Entities.PropertyRentModel
 
+@{
+    Layout = null;
+}
 
-<form asp-action="_BasicDetails">
+<form id="frm_basic_details">
     <div class="row">
      
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
            
-                    <input asp-for="PropertyId" type="hidden" class="form-control" />
+                    <input asp-for="PropertyId" type="hidden" class="form-control" value="0" />
                   
             <div class="col-md-5">
                 <div class="form-group">
@@ -19,10 +22,10 @@
             </div>
             <div class="col-md-5">
                 <div class="form-group">
-                    <label asp-for="PropertyTypeId" class="bmd-label-floating"></label>
+                   
                     <select asp-for="PropertyTypeId"
                             class="form-control"
-                            asp-items="@(new SelectList(@ViewBag.PropertyType,"PropertyTypeId", "PropertyType"))">
+                            asp-items="@(new SelectList(Model.propertyType,"PropertyTypeId", "PropertyType"))">
                     </select>
                     <span asp-validation-for="PropertyTypeId" class="text-danger"></span>
                 </div>
@@ -36,10 +39,10 @@
             </div>
             <div class="col-md-5">
                 <div class="form-group">
-                    <label asp-for="AU" class="bmd-label-floating"></label>
+                   
                     <select asp-for="AU"
                             class="form-control"
-                            asp-items="@(new SelectList(@ViewBag.PropertyType,"AU_ID", "AU"))">
+                            asp-items="@(new SelectList(Model.AuList,"AU_ID", "AU"))">
                     </select>
                     <span asp-validation-for="AU" class="text-danger"></span>
                 </div>
@@ -95,29 +98,14 @@
                     <span asp-validation-for="ProjectSociety" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="form-group form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" asp-for="CarParking" /> @Html.DisplayNameFor(model => model.CarParking)
-                    </label>
-                </div>
-            </div>
+           
+           
             <div class="col-md-5">
                 <div class="form-group">
-                    <label asp-for="FacingId" class="bmd-label-floating"></label>
-                    <select asp-for="FacingId"
-                            class="form-control"
-                            asp-items="@(new SelectList(@ViewBag.PropertyType,"FaceId", "Face"))">
-                    </select>
-                    <span asp-validation-for="FacingId" class="text-danger"></span>
-                </div>
-            </div>
-            <div class="col-md-5">
-                <div class="form-group">
-                    <label asp-for="CityId" class="bmd-label-floating"></label>
+                  
                     <select asp-for="CityId"
                             class="form-control"
-                            asp-items="@(new SelectList(@ViewBag.Cities,"Id", "Name"))">
+                            asp-items="@(new SelectList(Model.Cities,"Id", "Name"))">
                     </select>
                     <span asp-validation-for="CityId" class="text-danger"></span>
                 </div>
@@ -155,14 +143,17 @@
           
             <div class="col-md-5">
                 <div class="form-group">
-                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <input type="submit" value="Save" class="btn btn-primary" />
                 </div>
             </div>
 
         </div>
     
 </form>
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<script>
+    $(document).ready(function () {
+        BasicInt();
+    });
+</script>
 

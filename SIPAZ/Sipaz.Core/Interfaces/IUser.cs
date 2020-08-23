@@ -10,5 +10,7 @@ namespace Sipaz.Core.Interfaces
         public IEnumerable<UserModel> GetUser(string Email);
         public AuthenticateResponse Authenticate(AuthenticateRequest model);
         public Result Register(UserModel model);
+
+        public string generateJwtToken(UserModel user);
     }
 }

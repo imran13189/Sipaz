@@ -1,8 +1,10 @@
 ﻿<script>
+    $token=window.localStorage.getItem("token");
     $RegisterUrl = '@Url.Action("Register", "Account")'
     $LoginUrl = '@Url.Action("Login", "Account")'
 
     $BasicDetailsUrl = '@Url.Action("BasicDetails", "Property")'
     $PropertyFeautresUrl = '@Url.Action("PropertyFeautres", "Property")'
-    $PriceDetailsUrl='@Url.Action("PriceDetails", "Property")'
+    $PriceDetailsUrl = '@Url.Action("PriceDetails", "Property")'
+    $SaveBasicDetails = '/api/PropertyAPI/SaveBasicDetails';
 </script>

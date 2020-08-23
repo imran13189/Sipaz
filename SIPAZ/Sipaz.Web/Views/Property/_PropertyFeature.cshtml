@@ -1,23 +1,59 @@
-﻿@model Sipaz.Core.PropertyEntities.BasicDetails
+﻿@model Sipaz.Core.Entities.PropertyRentModel
 
-<div class="col-md-5">
-    <div class="form-group form-check">
-        <label class="form-check-label">
-            <input class="form-check-input" asp-for="BikeParking" /> @Html.DisplayNameFor(model => model.BikeParking)
-        </label>
+@{
+    Layout = null;
+}
+
+<form>
+    <div class="row">
+        <div class="col-md-5">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" asp-for="BikeParking" /> @Html.DisplayNameFor(model => model.BikeParking)
+                </label>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" asp-for="Lift" /> @Html.DisplayNameFor(model => model.Lift)
+                </label>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" asp-for="Water" /> @Html.DisplayNameFor(model => model.Water)
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" asp-for="CarParking" /> @Html.DisplayNameFor(model => model.CarParking)
+                </label>
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" asp-for="FacingId" value="1" /> East
+                    <input class="form-check-input" type="radio" asp-for="FacingId" value="2" /> West
+                    <input class="form-check-input" type="radio" asp-for="FacingId" value="3" /> North
+                    <input class="form-check-input" type="radio" asp-for="FacingId" value="4" /> South
+                </label>
+                @Html.DisplayName("Face")
+            </div>
+        </div>
+
+        <div class="col-md-5">
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </div>
+
     </div>
-</div>
-<div class="col-md-5">
-    <div class="form-group form-check">
-        <label class="form-check-label">
-            <input class="form-check-input" asp-for="Lift" /> @Html.DisplayNameFor(model => model.Lift)
-        </label>
-    </div>
-</div>
-<div class="col-md-5">
-    <div class="form-group form-check">
-        <label class="form-check-label">
-            <input class="form-check-input" asp-for="Water" /> @Html.DisplayNameFor(model => model.Water)
-        </label>
-    </div>
-</div>
+
+</form>

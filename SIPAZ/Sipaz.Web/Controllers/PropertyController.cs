@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 using Sipaz.Core.Interfaces;
+using Sipaz.Core.Entities;
 
 namespace Sipaz.Web.Controllers
 {
@@ -21,22 +22,24 @@ namespace Sipaz.Web.Controllers
             return View();
         }
 
-        public IActionResult BasicDetails()
+        public IActionResult BasicDetails(int Id)
         {
-            object masterData=_property.GetMasterData();
-            return View();
+            PropertyRentModel model =_property.GetMasterData();
+            return View("_BasicDetails", model);
         }
 
 
-        public IActionResult PropertyFeautres()
+        public IActionResult PropertyFeautres(int Id)
         {
-            return View();
+            return View("_PropertyFeature");
         }
 
-        public IActionResult PriceDetails()
+        public IActionResult PriceDetails(int Id)
         {
-            return View();
+            return View("_PriceDetails");
         }
+
+
 
     }
 }

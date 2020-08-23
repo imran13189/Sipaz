@@ -43,7 +43,7 @@ namespace Sipaz.DAL.Repository
             return new AuthenticateResponse(user, token);
         }
 
-        private string generateJwtToken(UserModel user)
+        public string generateJwtToken(UserModel user)
         {
             // generate token that is valid for 7 days
             var tokenHandler = new JwtSecurityTokenHandler();
